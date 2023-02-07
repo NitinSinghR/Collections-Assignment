@@ -8,7 +8,8 @@ public class Hashset {
         Logger l = Logger.getLogger("com.api.jar");
         Scanner sc=new Scanner(System.in);
 
-        String s,s2="Enter your choice\n1.Add\n2.Remove\n3.size\n4.Print";
+        String s;
+        String s2="Enter your choice\n1.Add\n2.Remove\n3.size\n4.Print";
         while (true) {
             l.info(s2);
             int ch=sc.nextInt();
@@ -27,6 +28,7 @@ public class Hashset {
                 case 3:{
                     String k=String.valueOf(set.size());
                     l.info(k);
+                    break;
                 }
                 case 4:{
                     String s1="The values in Set are "+set;
