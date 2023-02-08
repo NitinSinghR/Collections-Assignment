@@ -13,18 +13,19 @@ class Hashmap {
         map.put(2,"Orange");
         map.put(4,"Grapes");
 
+        l.log(Level.INFO,()->"Size: " +map.size());
         l.log(Level.INFO,()->"Keys : " + map.keySet());
         l.log(Level.INFO,()->"Values : " + map.values());
-        l.log(Level.INFO,()-> "Key-Value mapping: " + map.entrySet());
+        l.log(Level.INFO,()-> "Key-Value pairs: " + map.entrySet());
         map.remove(3);
 
-        l.info("After updating ");
-        l.log(Level.INFO,()-> "Key-Value mappings: " + map.entrySet());
-        l.log(Level.INFO,()->"Size: " +map.size());
-        l.log(Level.INFO,()-> map.get(2));
+        l.info("After removing ");
+        l.log(Level.INFO,()-> "Key-Value pairs: " + map.entrySet());
+
+        l.log(Level.INFO,()-> "Getting a value"+map.get(2));
         map.replace(2,"Kiwi");
 
-        l.info("After updating ");
-        l.log(Level.INFO,()-> "Key-Value mappings: " + map.entrySet());
+        l.info("After replacing ");
+        l.log(Level.INFO,()-> "Key-Value pairs: " + map.entrySet());
     }
 }
