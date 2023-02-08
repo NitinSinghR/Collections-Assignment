@@ -6,7 +6,7 @@ public class Hashset {
     public static void main(String[] args){
         Logger l = Logger.getLogger("com.api.jar");
         String s;
-        String s2="Enter your choice\n1.Add\n2.Print\n3.Remove\n4.Size";
+        String s2="Enter your choice\n1.Add\n2.Print\n3.Size\n4.Remove";
 
         Scanner sc=new Scanner(System.in);
         HashSet<String> set=new HashSet<>();
@@ -26,14 +26,14 @@ public class Hashset {
                     break;
                 }
                 case 3:{
-                    s=sc.next();
-                    set.remove(s);
-                    l.info("Removed the element");
+                    String k=String.valueOf(set.size());
+                    l.info(k);
                     break;
                 }
                 case 4:{
-                    String k=String.valueOf(set.size());
-                    l.info(k);
+                    s=sc.next();
+                    set.remove(s);
+                    l.info("Removed the element");
                     break;
                 }
                 default:{
