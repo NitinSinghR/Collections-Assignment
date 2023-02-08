@@ -4,12 +4,13 @@ import java.util.*;
 import java.util.logging.Logger;
 public class Hashset {
     public static void main(String[] args){
-        HashSet<String> set=new HashSet<>();
         Logger l = Logger.getLogger("com.api.jar");
-        Scanner sc=new Scanner(System.in);
-
         String s;
         String s2="Enter your choice\n1.Add\n2.Print\n3.Remove\n4.Size";
+
+        Scanner sc=new Scanner(System.in);
+        HashSet<String> set=new HashSet<>();
+
         while (true) {
             l.info(s2);
             int ch=sc.nextInt();
