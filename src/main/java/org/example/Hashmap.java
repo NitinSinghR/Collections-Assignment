@@ -18,15 +18,15 @@ class Hashmap {
         l.log(Level.INFO,()->"Values : " + map.values());
         l.log(Level.INFO,()->"Keys : " + map.keySet());
         l.log(Level.INFO,()-> s1 + map.entrySet());
-        map.remove(2);
 
         l.log(Level.INFO,()-> "Getting a value"+map.get(2));
-        map.replace(2,"Kiwi");
 
         l.info("After removing ");
+        map.remove(2);
         l.log(Level.INFO,()-> s1 +map.entrySet());
 
         l.info("After replacing ");
+        map.replace(2,"Kiwi");
         l.log(Level.INFO,()-> s1 + map.entrySet());
     }
 }
